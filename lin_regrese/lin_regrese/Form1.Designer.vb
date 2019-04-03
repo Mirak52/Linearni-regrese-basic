@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
 	Inherits System.Windows.Forms.Form
 
 	'Formulář přepisuje metodu Dispose, aby vyčistil seznam součástí.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
 	'POZNÁMKA: Následující procedura je vyžadována Návrhářem Windows Form
 	'Může být upraveno pomocí Návrháře Windows Form.  
 	'Neupravovat pomocí editoru kódu
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Me.Button1 = New System.Windows.Forms.Button()
 		Me.TextBoxX = New System.Windows.Forms.TextBox()
@@ -33,6 +33,9 @@ Partial Class Form1
 		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
 		Me.Button2 = New System.Windows.Forms.Button()
 		Me.Chybiska = New System.Windows.Forms.Label()
+		Me.Button3 = New System.Windows.Forms.Button()
+		Me.Button4 = New System.Windows.Forms.Button()
+		Me.Button5 = New System.Windows.Forms.Button()
 		CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
@@ -102,9 +105,10 @@ Partial Class Form1
 		'
 		Me.Button2.Location = New System.Drawing.Point(497, 170)
 		Me.Button2.Name = "Button2"
-		Me.Button2.Size = New System.Drawing.Size(75, 23)
+		Me.Button2.Size = New System.Drawing.Size(135, 29)
 		Me.Button2.TabIndex = 9
-		Me.Button2.Text = "Button2"
+		Me.Button2.Text = "Otevřít ze souboru"
+		Me.Button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter
 		Me.Button2.UseVisualStyleBackColor = True
 		'
 		'Chybiska
@@ -117,11 +121,41 @@ Partial Class Form1
 		Me.Chybiska.Size = New System.Drawing.Size(0, 39)
 		Me.Chybiska.TabIndex = 10
 		'
+		'Button3
+		'
+		Me.Button3.Location = New System.Drawing.Point(497, 205)
+		Me.Button3.Name = "Button3"
+		Me.Button3.Size = New System.Drawing.Size(135, 50)
+		Me.Button3.TabIndex = 11
+		Me.Button3.Text = "Vypočítat"
+		Me.Button3.UseVisualStyleBackColor = True
+		'
+		'Button4
+		'
+		Me.Button4.Location = New System.Drawing.Point(497, 261)
+		Me.Button4.Name = "Button4"
+		Me.Button4.Size = New System.Drawing.Size(135, 55)
+		Me.Button4.TabIndex = 12
+		Me.Button4.Text = "Graf"
+		Me.Button4.UseVisualStyleBackColor = True
+		'
+		'Button5
+		'
+		Me.Button5.Location = New System.Drawing.Point(497, 322)
+		Me.Button5.Name = "Button5"
+		Me.Button5.Size = New System.Drawing.Size(135, 55)
+		Me.Button5.TabIndex = 13
+		Me.Button5.Text = "Graf 2.0"
+		Me.Button5.UseVisualStyleBackColor = True
+		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(800, 450)
+		Me.Controls.Add(Me.Button5)
+		Me.Controls.Add(Me.Button4)
+		Me.Controls.Add(Me.Button3)
 		Me.Controls.Add(Me.Chybiska)
 		Me.Controls.Add(Me.Button2)
 		Me.Controls.Add(Me.Save)
@@ -132,6 +166,7 @@ Partial Class Form1
 		Me.Controls.Add(Me.TextBoxX)
 		Me.Controls.Add(Me.Button1)
 		Me.Name = "Form1"
+		Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
 		Me.Text = "Form1"
 		CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
@@ -150,4 +185,7 @@ Partial Class Form1
 	Friend WithEvents OpenFileDialog1 As OpenFileDialog
 	Friend WithEvents Button2 As Button
 	Friend WithEvents Chybiska As Label
+	Friend WithEvents Button3 As Button
+	Friend WithEvents Button4 As Button
+	Friend WithEvents Button5 As Button
 End Class
